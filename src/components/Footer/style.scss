@@ -1,0 +1,31 @@
+.bottom {
+  background-color: #334648;
+  position: relative;
+  bottom: -10rem;
+  padding-top: 0.5rem;
+  &__body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    color: #ffffff !important;
+    padding-bottom: 2rem;
+    font-size: 0.8rem;
+    h5 {
+      font-size: 0.9rem;
+    }
+  }
+  &__footer {
+    color: #ffffff !important;
+    font-size: 0.8rem;
+    font-weight: 200;
+    background-color: #466367c8;
+    padding: 0.7rem;
+    margin-top: -0.3rem;
+  }
+}
+.social-media,
+.section-legal,
+.section-contact {
+  border-left: 1px solid;
+  padding-left: 1rem;
+}

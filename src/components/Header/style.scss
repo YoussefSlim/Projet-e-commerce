@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Tangerine:wght@700&display=swap');
+
+.primary-title {
+  font-family: 'playlist-script';
+  color: #d5992e;
+  font-size: 2.5rem;
+}
+.secondary-title {
+  font-family: 'Open Sans', sans-serif;
+  color: #d5992e;
+  font-size: 0.6rem;
+  margin-left: 7.2rem;
+  margin-top: -0.3rem;
+}
+.navbar-brand {
+  display: inline-block;
+  padding-bottom: -1rem;
+  padding-left: 2rem;
+  padding-right: 11rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+.navbar {
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  top: -7px;
+  padding: 1rem;
+}
+.mr-sm-2 {
+  padding-right: 35rem;
+
+  @media (max-width: 550px) {
+    padding-right: 0;
+    margin-left: 0;
+  }
+  @media (max-width: 1024px) {
+    padding-right: 0;
+    margin-left: 0;
+  }
+}
+.bg-light {
+  background-color: #3b5054 !important;
+  border-bottom: 1px outset;
+}
+@media (max-width: 550px) {
+  .form-control {
+    width: 75%;
+  }
+  .navbar-collapse {
+    margin-top: 0.7rem;
+  }
+  .navbar-brand {
+    margin-right: 0rem;
+    margin-left: 2rem;
+  }
+}
+.list {
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px outset;
+  margin-top: 6.3rem;
+  background-color: #3b5054;
+  padding-bottom: 1rem;
+}
+li a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none !important;
+  line-height: 50px !important;
+
+  color: #fff;
+  &:hover {
+    color: #fff !important;
+  }
+  &::after {
+    content: '';
+    display: block;
+    margin: -10px 0 -16px 0;
+    height: 2px;
+    line-height: 40px;
+    width: 0;
+    transition: width 0.5s ease, background-color 0.5s ease;
+  }
+  &:hover:after {
+    width: 100% !important;
+    background: #d5992e;
+  }
+}
+
+.btn-outline-success {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+.btn {
+  border: 1px solid #f3b66c;
+  margin-left: -0.6rem;
+  &:hover {
+    color: #f3b66c !important;
+    border-color: #f3b66c !important;
+  }
+}
+.lien-compte,
+.lien-liste {
+  margin-left: 8rem;
+  color: #fff;
+  font-size: 0.8rem;
+  &:hover {
+    opacity: 0.5;
+    color: #d5992e;
+    transform: scale3d(1.2, 1.2, 1.2);
+    text-decoration-line: none;
+  }
+}
+.magnifier {
+  background: transparent;
+  border: 0;
+  margin-left: -4.5rem;
+  &__img {
+    width: 50%;
+    opacity: 0.6;
+  }
+}

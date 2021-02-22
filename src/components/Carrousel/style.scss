@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Tangerine:wght@700&display=swap');
+.carousel {
+  //margin-bottom: 70rem;
+  padding: 8rem;
+  &__player {
+    width: 100vw;
+    height: 37vw;
+    position: fixed;
+    top: 100px;
+    z-index: -1;
+    left: 0;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
+    margin: 11rem 0rem 2rem;
+  }
+  @media (max-width: 700px) {
+    width: 65 !important;
+    margin: 9rem 29rem 5rem !important;
+  }
+  &__text {
+    font-family: 'Tangerine', cursive;
+    font-size: 6rem;
+    color: white;
+  }
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #d5992e;
+  }
+  &__text,
+  &__title {
+    opacity: 0;
+    animation: hide 4s ease-in-out 1s reverse;
+    @keyframes hide {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}

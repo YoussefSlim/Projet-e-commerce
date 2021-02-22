@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.all-card {
+  margin-bottom: -15rem;
+  background-color: white;
+  margin-top: 22rem;
+  @media (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+  }
+  @media (max-width: 700px) {
+    margin-left: 29rem !important;
+    margin-right: 25rem !important;
+  }
+  @media (min-width: 1024px) {
+    margin-bottom: 23rem;
+    margin-top: -18rem;
+  }
+  &__products,
+  &__categories {
+    width: 52%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 34rem 5rem;
+
+    @media (max-width: 550px) {
+      display: flex;
+      flex-direction: column;
+      margin-left: 3rem;
+    }
+    @media (max-width: 700px) {
+      margin-left: 29rem !important;
+      margin-right: 25rem !important;
+    }
+    @media (min-width: 1024px) {
+      width: 94%;
+      margin: 0 2rem -28rem !important;
+    }
+  }
+  &__title {
+    margin-right: 54rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: 3rem;
+    font-family: 'Tangerine', cursive;
+
+    @media (max-width: 550px) {
+      font-size: xx-large;
+      margin-right: 0;
+    }
+    @media (max-width: 700px) {
+      margin-right: 46rem;
+    }
+    @media (min-width: 1024px) {
+      margin-right: 40rem;
+      font-size: 2.5rem;
+    }
+  }
+}
+.animate-card {
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  border-color: #0d3e5e70;
+
+  &:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    box-shadow: 6px 6px 19.5px grey;
+  }
+}
