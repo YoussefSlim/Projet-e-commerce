@@ -1,8 +1,19 @@
+import { useState } from 'react';
+
 import { Navbar, Form, FormControl, Button } from 'react-bootstrap';
 import { NavBar } from './navbar';
 
 import './style.scss';
-export const Header = () => {
+export const Header = (event) => {
+  const [classname, setClassname] = useState('');
+  const rotateBtn = (event) => {
+    if (classname !== '') {
+      setClassname('');
+    } else {
+      setClassname('rotate-btn');
+    }
+  };
+
   return (
     <>
       <Navbar bg="light" expand="lg">
@@ -10,7 +21,11 @@ export const Header = () => {
           <h1 className="primary-title">Eya Mignardise</h1>
           <h3 className="secondary-title">PÂTISSERIE TUNISIENNE</h3>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          className={classname}
+          onClick={rotateBtn}
+        />
         <Navbar.Collapse id="basic-navbar-nav">
           <Form inline>
             <FormControl

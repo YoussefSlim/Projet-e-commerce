@@ -20,6 +20,9 @@
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  @media (max-width: 550px) {
+    margin-left: 1rem;
+  }
 }
 .navbar {
   position: fixed;
@@ -46,14 +49,10 @@
 }
 @media (max-width: 550px) {
   .form-control {
-    width: 75%;
+    width: 98%;
   }
   .navbar-collapse {
     margin-top: 0.7rem;
-  }
-  .navbar-brand {
-    margin-right: 0rem;
-    margin-left: 2rem;
   }
 }
 .list {
@@ -89,6 +88,9 @@ li a {
     width: 100% !important;
     background: #d5992e;
   }
+  @media (max-width: 550px) {
+    line-height: 40px !important;
+  }
 }
 
 .btn-outline-success {
@@ -114,6 +116,11 @@ li a {
     transform: scale3d(1.2, 1.2, 1.2);
     text-decoration-line: none;
   }
+  @media (max-width: 550px) {
+    margin-left: 2.1rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+  }
 }
 .magnifier {
   background: transparent;
@@ -123,4 +130,18 @@ li a {
     width: 50%;
     opacity: 0.6;
   }
+}
+
+@media (max-width: 550px) {
+  .navbar-light .navbar-toggler {
+    margin-inline: auto !important;
+    border-radius: 45%;
+    padding: 0.3rem;
+  }
+  .form-inline {
+    margin-left: 0.4rem;
+  }
+}
+.rotate-btn {
+  transform: rotate(90deg);
 }
